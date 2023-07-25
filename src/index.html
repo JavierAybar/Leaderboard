@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-</head>
-<body>
-    <h1>Leaderboard</h1>
-    <script src="index.js"></script>
-</body>
+  </head>
+  <body>
+    <h1 class="hero__title">Leaderboard</h1>
+    <main class="main__container">
+        
+      <section class="recent-scores__container">
+        <div class="recent-scores__header">
+          <h2 class="scores__titile">Recent scores</h2>
+          <button class="scores__btn-refresh">Refresh</button>
+        </div>
+
+        <div class="scores__container">
+          <ul class="scores__table">
+            <li class="scores__item">Name: 100</li>
+            <li class="scores__item">Name: 100</li>
+            <li class="scores__item">Name: 100</li>
+            <li class="scores__item">Name: 100</li>
+            <li class="scores__item">Name: 100</li>
+            <li class="scores__item">Name: 100</li>
+            <li class="scores__item">Name: 100</li>
+            <li class="scores__item">Name: 100</li>
+            <li class="scores__item">Name: 100</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="add-score__container">
+            <h2 class="add-score__title">Add your score</h2>
+        <div class="add-score__inputs">
+          <input class="add-score__input" type="text" placeholder="Your name" />
+          <input class="add-score__input" type="text" placeholder="Your score" />
+          <button class="add-score__btn-submit" type="submit">Submit</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
