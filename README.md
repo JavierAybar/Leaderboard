@@ -47,6 +47,12 @@ Leaderboard is an engaging web application designed to showcase and rank the top
 
 🔄 Refresh Functionality: Users can easily refresh the leaderboard with the click of a button to see the most up-to-date scores and rankings fetched from the API.
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- You can visit the live demo [here](https://javieraybar.github.io/Leaderboard/dist/)
+
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -106,13 +112,6 @@ To run tests, run the following command:
 
   npx eslint . --fix
 ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- You can visit the live demo [here](https://javieraybar.github.io/Leaderboard/dist/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
