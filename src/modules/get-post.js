@@ -1,5 +1,5 @@
 const postData = async (obj) => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/NthymQIM67r4KaVRyWlx/scores/', {
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/sTasHn5qwf0v98RIRjlV/scores/', {
     method: 'POST',
     body: JSON.stringify({
       name: "Javier's game",
@@ -15,7 +15,7 @@ const postData = async (obj) => {
 };
 
 const getData = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/NthymQIM67r4KaVRyWlx/scores/');
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/sTasHn5qwf0v98RIRjlV/scores/');
   const data = await response.json();
 
   data.result.sort((a, b) => b.score - a.score);
