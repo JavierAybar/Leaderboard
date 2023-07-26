@@ -84,6 +84,11 @@ li {
   margin-bottom: 157px;
 }
 
+.scores__table {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
 .add-score__inputs {
   display: flex;
   flex-direction: column;
