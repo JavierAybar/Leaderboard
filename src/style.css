@@ -5,40 +5,60 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
 }
 
 li {
   list-style: none;
 }
 
+body {
+  background-image: url("./assets/bg.svg");
+}
+
 .main__container {
   display: flex;
   align-items: center;
+  flex-direction: column;
   width: 80%;
   height: 80vh;
-  margin: 31px auto 0 auto;
-  gap: 100px;
+  margin: 70px auto 0 auto;
+  gap: 40px;
 }
 
 .hero__title {
-  font-size: 4.5rem;
-  margin: 31px 0 0 34px;
+  font-size: 2rem;
+  margin: 20px 0 0 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
 }
 
 .recent-scores__container {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 90%;
+  border-radius: 25px;
+  background: linear-gradient(334.14deg, rgba(255, 255, 255, 0.31) -14.65%, rgba(255, 255, 255, 0) 103.2%), linear-gradient(149.49deg, rgba(255, 232, 191, 0.4) -4.75%, rgba(255, 232, 191, 0) 119.61%);
+  filter: drop-shadow(7px 7px 28px rgba(0, 0, 0, 0.18));
+  backdrop-filter: blur(4px);
 }
 
 .recent-scores__header {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  padding: 7% 6%;
+  border-radius: 10px 10px 0 0;
 }
 
 .scores__titile {
-  font-size: 3rem;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 100;
 }
 
 .scores__btn-refresh,
@@ -47,46 +67,55 @@ li {
   font-weight: 700;
   margin-left: auto;
   height: 40px;
-  border: 2px solid black;
-  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  background-color: #e9553f;
+  border: 1px #efefef solid;
+  border-radius: 8px;
 }
 
 /* SCORES TABLE */
 
 .scores__container {
   width: 100%;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 .scores__item {
-  width: 100%;
-  height: 40px;
-  padding: 10px 0 0 10px;
-  font-weight: 700;
-}
-
-.scores__item:nth-child(odd) {
-  background-color: #eee;
+  height: auto;
+  padding: 15px 5px 15px 20px;
+  color: #fc9788;
+  background-color: #303030;
+  border-radius: 10px;
+  width: auto;
 }
 
 /* ADD SCORE SECCTION */
 
 .add-score__title {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin: 20px 0;
+  color: #fff;
+  font-weight: 100;
 }
 
 .add-score__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 600px;
+  width: 90%;
   margin-bottom: 157px;
 }
 
 .scores__table {
-  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 410px;
   overflow-y: scroll;
+  margin: 0 15px 50px 15px;
+  scroll-behavior: smooth;
+  width: 90%;
 }
 
 .add-score__inputs {
@@ -94,10 +123,37 @@ li {
   flex-direction: column;
   gap: 40px;
   width: 300px;
+  margin-bottom: 20px;
 }
 
 .add-score__input {
   height: 40px;
   padding-left: 10px;
-  border: 1px solid black;
+  border: none;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .main__container {
+    flex-direction: row;
+    gap: 80px;
+    height: 90%;
+    margin-top: 15%;
+  }
+
+  .add-score__container {
+    width: 38%;
+  }
+
+  .recent-scores__container {
+    width: 50%;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: 100vw;
+  }
 }
